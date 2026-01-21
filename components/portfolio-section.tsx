@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -121,6 +121,72 @@ function ProjectGrid({ items, emptyText, viewProjectLabel }: { items: LocalizedP
           </CardContent>
         </Card>
       ))}
+    </div>
+  )
+}
+
+function MarketingCarousel({ items, emptyText, viewProjectLabel }: { items: LocalizedProject[]; emptyText: string; viewProjectLabel: string }) {
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  const scrollBy = (direction: number) => {
+    const container = scrollRef.current
+    if (!container) return
+
+    const amount = container.clientWidth * 0.85
+    container.scrollBy({ left: direction * amount, behavior: "smooth" })
+  }
+
+  if (!items.length) {
+    return (
+      <div className="text-muted-foreground text-sm bg-muted/40 border border-border/50 rounded-lg p-6">
+        {emptyText}
+      </div>
+    )
+  }
+
+  return (
+    <div className="relative sm:hidden">
+      <div ref={scrollRef} className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4" style={{ scrollBehavior: "smooth" }}>
+        {items.map((project, index) => (
+          <Card
+            key={index}
+            className="w-[82vw] max-w-sm flex-shrink-0 snap-center overflow-hidden border-none shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            <div className="relative overflow-hidden aspect-video">
+              <img
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  className="gap-2 w-full justify-center"
+                  onClick={() => window.open(project.url, "_blank")}
+                >
+                  {viewProjectLabel} <ExternalLink className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+            <CardContent className="p-5 space-y-3">
+              <p className="text-sm text-primary font-semibold">{project.category}</p>
+              <h3 className="text-lg font-bold">{project.title}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{project.description}</p>
+              <div className="flex flex-wrap gap-2 pt-1">
+                {project.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground cursor-default"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
     </div>
   )
 }
@@ -256,7 +322,7 @@ export function PortfolioSection() {
   const marketingProjects = localizedProjects.filter((project) => project.type === "marketing")
 
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="pt-8 pb-20 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">{copy.heading}</h2>
@@ -265,7 +331,7 @@ export function PortfolioSection() {
 
         <div className="space-y-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-sm font-semibold text-primary px-3 py-1 rounded-full bg-primary/10">
                 {copy.categories.websites}
               </span>
@@ -279,16 +345,25 @@ export function PortfolioSection() {
           </div>
 
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <span className="text-sm font-semibold text-primary px-3 py-1 rounded-full bg-primary/10">
                 {copy.categories.marketing}
               </span>
             </div>
+            <div className="sm:hidden">
+              <MarketingCarousel
+                items={marketingProjects}
+                emptyText={copy.marketingEmpty}
+                viewProjectLabel={copy.buttons.viewProject}
+              />
+            </div>
+            <div className="hidden sm:block">
               <ProjectGrid
                 items={marketingProjects}
                 emptyText={copy.marketingEmpty}
                 viewProjectLabel={copy.buttons.viewProject}
               />
+            </div>
           </div>
         </div>
       </div>

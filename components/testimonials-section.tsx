@@ -37,7 +37,7 @@ export function TestimonialsSection() {
   }, [])
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
+    <section className="py-0 sm:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
           {messages.testimonials.title}

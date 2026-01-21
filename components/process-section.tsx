@@ -15,12 +15,12 @@ export function ProcessSection() {
   }))
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 relative overflow-hidden">
+    <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
+          <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto">
             {messages.process.badge}
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
@@ -31,7 +31,31 @@ export function ProcessSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <div className="sm:hidden -mx-4 px-4 mb-10">
+          <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory">
+            {steps.map((step, index) => (
+              <Card
+                key={index}
+                className="w-72 flex-shrink-0 snap-start relative overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-background"
+              >
+                <div className="absolute top-0 right-0 text-[90px] font-bold bg-gradient-to-br from-primary/10 to-primary/5 bg-clip-text text-transparent leading-none p-4">
+                  {step.number}
+                </div>
+                <CardHeader>
+                  <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 w-fit group-hover:scale-110 group-hover:rotate-6">
+                    <step.icon className="h-6 w-6" />
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{step.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        <div className="hidden sm:grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {steps.map((step, index) => (
             <Fragment key={index}>
               <Card
