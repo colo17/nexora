@@ -26,9 +26,10 @@ const translations = {
     },
     hero: {
       badge: "Professional Web Design & Development",
-      titleLead: "Websites that",
-      titleEmphasis: "impact",
-      titleTail: "create impact",
+      badgeSecondary: "Digital marketing that converts",
+      titleLead: "Digital experiences",
+      titleEmphasis: "drive",
+      titleTail: "results",
       description:
         "From concept to launch. We build modern, fast, and results-driven websites that lift your business to the next level.",
       primaryCta: "Start Your Project",
@@ -40,7 +41,7 @@ const translations = {
       ],
     },
     about: {
-      badge: "About MSwebdesign",
+      badge: "About Nexora",
       titleLead: "Quality that",
       titleEmphasis: "makes an impact",
       description:
@@ -70,7 +71,7 @@ const translations = {
           icon: "Layout",
           title: "Web Design",
           description:
-            "We design websites that are not only visually appealing but also functional and user-friendly. At MSwebdesign, your brand is central, and we make sure your online presence aligns with your company goals and values.",
+            "We design websites that are not only visually appealing but also functional and user-friendly. At Nexora, your brand is central, and we make sure your online presence aligns with your company goals and values.",
         },
         {
           icon: "Palette",
@@ -94,7 +95,7 @@ const translations = {
           icon: "Target",
           title: "Results-Driven",
           description:
-            "At MSwebdesign we aim for success. Our approach always focuses on achieving measurable results that fuel your company growth. Together we look at what truly works.",
+            "At Nexora we aim for success. Our approach always focuses on achieving measurable results that fuel your company growth. Together we look at what truly works.",
         },
         {
           icon: "Search",
@@ -171,28 +172,28 @@ const translations = {
             "Community hub for Uruguay RP featuring server info, updates, and a clear path to join the roleplay server.",
         },
         productLaunch: {
-          title: "Product Launch Campaign",
-          category: "Marketing Campaign",
+          title: "UruguayRP",
+          category: "Gaming community marketing",
           description:
-            "Full-funnel launch campaign with landing pages, email nurture, and paid ads to drive signups and measure ROI.",
+            "Growth support for UruguayRP, the biggest GTA V server in Uruguay and one of the most viral Spanish-speaking communities.",
         },
         brandSprint: {
-          title: "Brand Awareness Sprint",
-          category: "Social & Content",
+          title: "Bekko Music",
+          category: "Music artist growth",
           description:
-            "Two-week content sprint across social channels with creatives, copy, and reporting to lift brand visibility.",
+            "Campaigns and socials for Bekko Music, a rising artist with standout numbers across major platforms.",
         },
         leadGen: {
-          title: "Lead Gen Playbook",
-          category: "Performance Marketing",
+          title: "Tato Machado",
+          category: "Creator growth",
           description:
-            "Conversion-focused funnel using targeted ads, optimized forms, and retargeting to increase qualified leads.",
+            "Scaled Tato Machado across YouTube and socials—near 100k subs in 4 months plus rapid TikTok and Instagram traction.",
         },
         nurture: {
-          title: "Email Nurture Series",
-          category: "Lifecycle Marketing",
+          title: "GangaHome Store",
+          category: "MercadoLibre growth",
           description:
-            "Automated email sequence with segmentation and A/B testing to warm prospects and boost engagement.",
+            "Performance playbook for GangaHome on MercadoLibre, generating thousands of leads and sustained marketplace lift.",
         },
       },
     },
@@ -206,7 +207,14 @@ const translations = {
         starter: {
           name: "Starter Website",
           price: "€999",
-          features: ["Up to 5 pages", "Responsive design", "Essential SEO", "Contact form", "1 month of free maintenance"],
+          features: [
+            "Up to 5 pages",
+            "Responsive design",
+            "Essential SEO",
+            "Contact form",
+            "Social media marketing starter",
+            "1 month of free maintenance",
+          ],
           cta: "Choose Package",
         },
         pro: {
@@ -218,6 +226,7 @@ const translations = {
             "Advanced SEO",
             "CMS integration",
             "E-commerce features",
+            "Social media marketing growth",
             "3 months of free maintenance",
           ],
           cta: "Choose Package",
@@ -230,6 +239,7 @@ const translations = {
             "Custom functionality",
             "API integrations",
             "Dedicated project manager",
+            "Social media marketing full scope",
             "6 months of free maintenance",
           ],
           cta: "Contact Us",
@@ -243,22 +253,34 @@ const translations = {
       subtitle:
         "As always, quality comes first for us. We also aim for as much transparency as possible so our clients know exactly where they stand.",
       items: [
+          {
+            quote:
+              "Our new Law firm site is already driving better leads and clearer client intake. Nexora made it feel effortless.",
+            name: "Veronica",
+            role: "Partner, law firm",
+          },
+          {
+            quote:
+              "The wedding site captured our story perfectly. Friends still visit it for the photos and memories.",
+            name: "Bruno",
+            role: "Groom",
+          },
         {
           quote:
-            "Fast and effective! I wanted a logo that would perfectly represent my business, and MSwebdesign did not disappoint. :)",
+            "Fast and effective! I wanted a logo that would perfectly represent my business, and Nexora did not disappoint. :)",
           name: "Patrick",
-          role: "Entrepreneur",
+          role: "E-Commerce Entrepreneur",
         },
         {
           quote:
-            "For our foundation we wanted to completely renew our old website and automate many manual tasks. MSwebdesign delivered a great custom product with tooling so we no longer have to do everything by hand.",
-          name: "Mehmet",
+            "For our foundation we wanted to completely renew our old website and automate many manual tasks. Nexora delivered a great custom product with tooling so we no longer have to do everything by hand.",
+          name: "Chris",
           role: "Chairman, non-profit foundation",
         },
         {
           quote:
             "For my new company I wanted a fresh website that could serve as a business card. Now I have a beautiful, fast site that is also easy to find on Google! Really great.",
-          name: "Youri",
+          name: "John",
           role: "Entrepreneur",
         },
       ],
@@ -284,11 +306,11 @@ const translations = {
       cards: {
         email: {
           title: "Email",
-          value: "info@mswebdesign.nl",
+          value: "juanbiatturi@gmail.com",
         },
         phone: {
           title: "Phone",
-          value: "+31 6 12345678",
+          value: "+353 83 124 4461",
         },
         hours: {
           title: "Working hours",
@@ -297,8 +319,8 @@ const translations = {
       },
     },
     footer: {
-      brand: "ms-webdesign",
-      copyright: "© 2025 ms-webdesign. All rights reserved.",
+      brand: "nexora",
+      copyright: "© 2025 nexora. All rights reserved.",
       navigation: "Navigation",
       links: {
         about: "About Us",
@@ -363,6 +385,7 @@ const translations = {
     },
     hero: {
       badge: "Diseño y desarrollo web profesional",
+      badgeSecondary: "Marketing digital que convierte",
       titleLead: "Sitios web que",
       titleEmphasis: "impactan",
       titleTail: "y generan resultados",
@@ -377,7 +400,7 @@ const translations = {
       ],
     },
     about: {
-      badge: "Sobre MSwebdesign",
+      badge: "Sobre Nexora",
       titleLead: "Calidad que",
       titleEmphasis: "genera impacto",
       description:
@@ -431,7 +454,7 @@ const translations = {
           icon: "Target",
           title: "Enfoque a resultados",
           description:
-            "En MSwebdesign apuntamos al éxito. Nuestro enfoque se centra en lograr resultados medibles que impulsen el crecimiento de tu empresa.",
+            "En Nexora apuntamos al éxito. Nuestro enfoque se centra en lograr resultados medibles que impulsen el crecimiento de tu empresa.",
         },
         {
           icon: "Search",
@@ -508,28 +531,28 @@ const translations = {
             "Centro para la comunidad Uruguay RP con info del servidor, novedades y acceso claro para unirse al roleplay.",
         },
         productLaunch: {
-          title: "Campaña de lanzamiento",
-          category: "Campaña de marketing",
+          title: "UruguayRP",
+          category: "Marketing para comunidad gamer",
           description:
-            "Campaña full-funnel con landing pages, emails y anuncios pagados para impulsar registros y medir el ROI.",
+            "Impulso de crecimiento para UruguayRP, el servidor de GTA V más grande de Uruguay y uno de los más virales en habla hispana.",
         },
         brandSprint: {
-          title: "Sprint de notoriedad",
-          category: "Social y contenido",
+          title: "Bekko Music",
+          category: "Crecimiento de artista musical",
           description:
-            "Sprint de dos semanas con contenido y creatividades en redes para aumentar la visibilidad de la marca.",
+            "Campañas y redes para Bekko Music, un artista en ascenso con números destacables en las principales plataformas.",
         },
         leadGen: {
-          title: "Playbook de leads",
-          category: "Marketing de performance",
+          title: "Tato Machado",
+          category: "Crecimiento de creador",
           description:
-            "Embudo de conversión con anuncios segmentados, formularios optimizados y retargeting para aumentar leads calificados.",
+            "Escalamos a Tato Machado en YouTube y redes: cerca de 100k suscriptores en 4 meses y tracción rápida en TikTok e Instagram.",
         },
         nurture: {
-          title: "Serie de nurturing por email",
-          category: "Marketing de ciclo de vida",
+          title: "GangaHome Store",
+          category: "Crecimiento en MercadoLibre",
           description:
-            "Secuencia automatizada con segmentación y tests A/B para calentar prospectos y aumentar el engagement.",
+            "Playbook de performance para GangaHome en MercadoLibre, generando miles de leads y un crecimiento sostenido en el marketplace.",
         },
       },
     },
@@ -543,7 +566,14 @@ const translations = {
         starter: {
           name: "Sitio inicial",
           price: "€999",
-          features: ["Hasta 5 páginas", "Diseño responsive", "SEO esencial", "Formulario de contacto", "1 mes de mantenimiento gratuito"],
+          features: [
+            "Hasta 5 páginas",
+            "Diseño responsive",
+            "SEO esencial",
+            "Formulario de contacto",
+            "Marketing en redes sociales (inicio)",
+            "1 mes de mantenimiento gratuito",
+          ],
           cta: "Elegir paquete",
         },
         pro: {
@@ -555,6 +585,7 @@ const translations = {
             "SEO avanzado",
             "Integración CMS",
             "Funciones de ecommerce",
+            "Marketing en redes sociales (crecimiento)",
             "3 meses de mantenimiento gratuito",
           ],
           cta: "Elegir paquete",
@@ -567,6 +598,7 @@ const translations = {
             "Funcionalidades personalizadas",
             "Integraciones API",
             "Project manager dedicado",
+            "Marketing en redes sociales (full scope)",
             "6 meses de mantenimiento gratuito",
           ],
           cta: "Contáctanos",
@@ -579,22 +611,34 @@ const translations = {
       subtitle:
         "La calidad siempre es lo primero. También buscamos la mayor transparencia posible para que nuestros clientes sepan dónde están parados.",
       items: [
+          {
+            quote:
+              "Nuestro nuevo sitio para el despacho ya trae mejores leads y un intake más claro. Nexora lo hizo sentir sencillo.",
+            name: "Verónica",
+            role: "Socia, firma legal",
+          },
+          {
+            quote:
+              "La web de nuestra boda capturó nuestra historia. Nuestros amigos aún la visitan para ver fotos y revivir recuerdos.",
+            name: "Bruno",
+            role: "Novio",
+          },
         {
           quote:
-            "¡Rápidos y efectivos! Quería un logo que representara mi negocio y MSwebdesign no decepcionó. :)",
+            "¡Rápidos y efectivos! Quería un logo que representara mi negocio y Nexora no decepcionó. :)",
           name: "Patrick",
-          role: "Emprendedor",
+          role: "E-Commerce",
         },
         {
           quote:
-            "Para nuestra fundación queríamos renovar por completo el sitio y automatizar tareas manuales. MSwebdesign entregó un gran producto a medida con herramientas que nos ahorran trabajo.",
-          name: "Mehmet",
+            "Para nuestra fundación queríamos renovar por completo el sitio y automatizar tareas manuales. Nexora entregó un gran producto a medida con herramientas que nos ahorran trabajo.",
+          name: "Chris",
           role: "Presidente, fundación sin fines de lucro",
         },
         {
           quote:
             "Para mi empresa nueva quería un sitio que fuera mi tarjeta de presentación. Ahora tengo un sitio hermoso y rápido, y fácil de encontrar en Google. ¡Genial!",
-          name: "Youri",
+          name: "John",
           role: "Emprendedor",
         },
       ],
@@ -620,11 +664,11 @@ const translations = {
       cards: {
         email: {
           title: "Email",
-          value: "info@mswebdesign.nl",
+          value: "juanbiatturi@gmail.com",
         },
         phone: {
           title: "Teléfono",
-          value: "+31 6 12345678",
+          value: "+353 83 124 4461",
         },
         hours: {
           title: "Horario",
@@ -633,8 +677,8 @@ const translations = {
       },
     },
     footer: {
-      brand: "ms-webdesign",
-      copyright: "© 2025 ms-webdesign. Todos los derechos reservados.",
+      brand: "nexora",
+      copyright: "© 2025 nexora. Todos los derechos reservados.",
       navigation: "Navegación",
       links: {
         about: "Sobre nosotros",

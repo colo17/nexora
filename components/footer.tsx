@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { Linkedin } from "lucide-react"
 import { useLanguage } from "@/components/language-provider"
+import { Logo } from "@/components/logo"
 
 export function Footer() {
   const { messages } = useLanguage()
@@ -12,7 +13,9 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">{footer.brand}</h3>
+            <div className="mb-4">
+              <Logo sizeClass="h-14 md:h-16" />
+            </div>
             <p className="text-sm text-muted-foreground leading-relaxed">{footer.copyright}</p>
           </div>
 
@@ -53,24 +56,6 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-              <Link
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
               </Link>
             </div>
           </div>

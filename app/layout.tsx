@@ -10,9 +10,11 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ms-webdesign | Hoogwaardige Websites",
-  description: "Moderne, resultaatgerichte webdesigns die bezoekers omzetten in klanten",
-  generator: "v0.app",
+  title: "Nexora | Digital Growth & Websites",
+  description: "Nexora: results-driven websites and digital marketing that boost your brand.",
+  icons: {
+    icon: "/NexoraCirclePNG.png",
+  },
 }
 
 export default function RootLayout({

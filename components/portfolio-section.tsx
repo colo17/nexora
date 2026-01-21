@@ -37,29 +37,29 @@ const baseProjects = [
   },
   {
     key: "productLaunch",
-    image: "/placeholder.svg",
-    url: "https://example.com",
+    image: "/uruguayrpmarketing.png",
+    url: "https://www.instagram.com/uruguay__rp/",
     tags: ["Landing Pages", "Email", "Paid Ads"],
     type: "marketing" as const,
   },
   {
     key: "brandSprint",
-    image: "/placeholder.svg",
-    url: "https://example.com",
+    image: "/bekkomarketing.png",
+    url: "https://www.tiktok.com/@bekkomusic",
     tags: ["Social", "Content", "Analytics"],
     type: "marketing" as const,
   },
   {
     key: "leadGen",
-    image: "/placeholder.svg",
-    url: "https://example.com",
+    image: "/tateimarketing.png",
+    url: "https://www.youtube.com/@tatomachadoo",
     tags: ["PPC", "Retargeting", "CRO"],
     type: "marketing" as const,
   },
   {
     key: "nurture",
-    image: "/placeholder.svg",
-    url: "https://example.com",
+    image: "/gangahomemarketing.png",
+    url: "https://www.mercadolibre.com.uy/pagina/gangahomeuy#from=share_eshop",
     tags: ["Email", "Automation", "A/B Testing"],
     type: "marketing" as const,
   },
@@ -85,7 +85,7 @@ function ProjectGrid({ items, emptyText, viewProjectLabel }: { items: LocalizedP
       {items.map((project, index) => (
         <Card
           key={index}
-          className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300"
+          className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 p-0 gap-0"
         >
           <div className="relative overflow-hidden aspect-video">
             <img
