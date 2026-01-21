@@ -35,9 +35,9 @@ const translations = {
       primaryCta: "Start Your Project",
       secondaryCta: "View Our Work",
       stats: [
-        { label: "Projects", value: "50+" },
-        { label: "Happy Clients", value: "45+" },
-        { label: "Years Experience", value: "3+" },
+        { label: "Projects", value: "10+" },
+        { label: "Happy Clients", value: "15+" },
+        { label: "Years Experience", value: "4+" },
       ],
     },
     about: {
@@ -55,10 +55,9 @@ const translations = {
         { title: "Dynamic", description: "Flexible and quick to adapt to changing needs" },
       ],
       stats: [
-        { number: "50+", label: "Projects" },
-        { number: "45+", label: "Happy clients" },
-        { number: "30+", label: "Logos delivered" },
-        { number: "3+", label: "Years experience" },
+        { number: "10+", label: "Projects" },
+        { number: "15+", label: "Happy clients" },
+        { number: "4+", label: "Years experience" },
       ],
     },
     services: {
@@ -394,9 +393,9 @@ const translations = {
       primaryCta: "Empieza tu proyecto",
       secondaryCta: "Ver nuestro trabajo",
       stats: [
-        { label: "Proyectos", value: "50+" },
-        { label: "Clientes felices", value: "45+" },
-        { label: "Años de experiencia", value: "3+" },
+        { label: "Proyectos", value: "10+" },
+        { label: "Clientes felices", value: "15+" },
+        { label: "Años de experiencia", value: "4+" },
       ],
     },
     about: {
@@ -414,10 +413,9 @@ const translations = {
         { title: "Dinámicos", description: "Flexibles y rápidos para adaptarse a nuevas necesidades" },
       ],
       stats: [
-        { number: "50+", label: "Proyectos" },
-        { number: "45+", label: "Clientes felices" },
-        { number: "30+", label: "Logos entregados" },
-        { number: "3+", label: "Años de experiencia" },
+        { number: "10+", label: "Proyectos" },
+        { number: "15+", label: "Clientes felices" },
+        { number: "4+", label: "Años de experiencia" },
       ],
     },
     services: {

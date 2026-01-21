@@ -54,7 +54,7 @@ export function AboutSection() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center">
           {about.stats.map((stat, index) => (
             <div key={index} className="text-center group cursor-default">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
